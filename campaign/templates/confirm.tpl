@@ -2,6 +2,12 @@
 {include file="../../templates/header.tpl" title=foo}
 
 <form action="{$formAction}" method="post">
+<input type="hidden" name="hope" value="{$value['hope']}">
+<input type="hidden" name="name" value="{$value['name']}">
+<input type="hidden" name="phone" value="{$value['phone']}">
+<input type="hidden" name="companion_name" value="{$value['companion_name']}">
+<input type="hidden" name="mail" value="{$value['mail']}">
+
 <div class="formBox" id="form"> 
   <h2>お申込み</h2>
   <p>以下の内容で申込みします。<br />

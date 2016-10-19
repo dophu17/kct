@@ -67,25 +67,21 @@
   <span class="hs">※</span>は入力必須項目です。</p>
   <table>
     <tr>
-
-
-
-    
       <th>ご希望日程 <span class="hs">※</span></th>
-      <td><input type="radio" name="hope" id="radio1" value="1" />
-        <label for="radio1">11月26日（土）</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="hope" id="radio2" value="2" />
+      <td>
+        <input type="radio" name="hope" id="radio1" value="1" {if isset($value['hope']) && $value['hope'] == 1} checked="" {/if} />
+        <label for="radio1">11月26日（土）</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="hope" id="radio2" value="2" {if isset($value['hope']) && $value['hope'] == 2} checked="" {/if} />
         <label for="radio2">12月7日（水）</label>
         {if isset($message['hope'])}
         <div class="error"> {$message['hope']}</div>
         {/if}
         </td>
-        
     </tr>
     <tr>
       <th>お名前 <span class="hs">※</span></th>
       <td><label for="textfield"></label>
-      <input type="text" name="name" id="name" value="" />
-        
+      <input type="text" name="name" id="name" value="{if isset($value['name'])}{$value['name']}{/if}" />
       {if isset($message['name'])}
       <div class="error"> {$message['name']}</div>
       {/if}
@@ -93,31 +89,27 @@
     </tr>
     <tr>
       <th>電話番号 <span class="hs">※</span></th>
-      <td><input type="text" name="phone" id="phone" value="" />
+      <td><input type="text" name="phone" id="phone" value="{if isset($value['phone'])}{$value['phone']}{/if}" />
       <br />
       ハイフォンなしでご入力ください。
-      
       {if !empty($message['phone'])}
       <div class="error"> {$message['phone']}</div>
       {/if}
       </td>
-      
     </tr>
     <tr>
       <th>ご同伴者名</th>
-      <td><input type="text" name="companion_name" id="companion_name" value="" /></td>
+      <td><input type="text" name="companion_name" id="companion_name" value="{if isset($value['companion_name'])}{$value['companion_name']}{/if}" /></td>
     </tr>
     <tr>
       <th>メールアドレス <span class="hs">※</span></th>
-      <td><input type="text" name="mail" id="mail" value="" />
+      <td><input type="text" name="mail" id="mail" value="{if isset($value['mail'])}{$value['mail']}{/if}" />
       <br />
       受付完了のメールがkct.co.jpから届きますので，ドメイン指定など、必ず受け取れる設定にしてください。
-      
       {if !empty($message['mail'])}
       <div class="error"> {$message['mail']}</div>
       {/if}
       </td>
-      
     </tr>
   </table>
   <div class="btn">

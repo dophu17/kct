@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-10-19 09:48:42
+/* Smarty version 3.1.30, created on 2016-10-19 10:09:06
   from "D:\xampp\htdocs\kct.local\campaign\templates\confirm.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5807255a342b66_40175706',
+  'unifunc' => 'content_58072a2244e1c5_42872961',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -30,7 +30,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_5807255a342b66_40175706 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58072a2244e1c5_42872961 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -80,19 +80,19 @@ function content_5807255a342b66_40175706 (Smarty_Internal_Template $_smarty_tpl)
     <tr>
       <th>お名前 <span class="hs">※</span></th>
       <td><label for="textfield"></label>
-      sdcfaswf</td>
+      wtg34</td>
     </tr>
     <tr>
       <th>電話番号 <span class="hs">※</span></th>
-      <td>awefaew</td>
+      <td>tg34t3</td>
     </tr>
     <tr>
       <th>ご同伴者名</th>
-      <td>fewf</td>
+      <td>qt3w</td>
     </tr>
     <tr>
       <th>メールアドレス <span class="hs">※</span></th>
-      <td>ewafaewf</td>
+      <td>3wetw4</td>
     </tr>
   </table>
   <div class="btn">

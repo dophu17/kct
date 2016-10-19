@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-10-19 10:03:20
+/* Smarty version 3.1.30, created on 2016-10-19 10:15:32
   from "D:\xampp\htdocs\kct.local\campaign\templates\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_580728c860cdd1_32480686',
+  'unifunc' => 'content_58072ba4788252_43948121',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6879742848f6802265045706ce9d5efa43491814' => 
     array (
       0 => 'D:\\xampp\\htdocs\\kct.local\\campaign\\templates\\index.tpl',
-      1 => 1476864198,
+      1 => 1476864275,
       2 => 'file',
     ),
     '1af578ac868539e9329531bf3b2dfe34c0320b3a' => 
@@ -30,7 +30,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_580728c860cdd1_32480686 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58072ba4788252_43948121 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -138,7 +138,6 @@ function content_580728c860cdd1_32480686 (Smarty_Internal_Template $_smarty_tpl)
       <td><input type="radio" name="hope" id="radio1" value="1" />
         <label for="radio1">11月26日（土）</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="hope" id="radio2" value="2" />
         <label for="radio2">12月7日（水）</label>
-                <div class="error"> ご参加日を選択してください。</div>
                 </td>
         
     </tr>
@@ -147,7 +146,6 @@ function content_580728c860cdd1_32480686 (Smarty_Internal_Template $_smarty_tpl)
       <td><label for="textfield"></label>
       <input type="text" name="name" id="name" value="" />
         
-            <div class="error"> お名前を入力してください。</div>
             </td>  
     </tr>
     <tr>
@@ -156,7 +154,6 @@ function content_580728c860cdd1_32480686 (Smarty_Internal_Template $_smarty_tpl)
       <br />
       ハイフォンなしでご入力ください。
       
-            <div class="error"> 電話番号を入力してください。</div>
             </td>
       
     </tr>
@@ -170,7 +167,6 @@ function content_580728c860cdd1_32480686 (Smarty_Internal_Template $_smarty_tpl)
       <br />
       受付完了のメールがkct.co.jpから届きますので，ドメイン指定など、必ず受け取れる設定にしてください。
       
-            <div class="error"> メールアドレスを入力してください。</div>
             </td>
       
     </tr>
