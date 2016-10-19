@@ -1,0 +1,333 @@
+/*reset-------------------------------------------------*/
+body,div,h1,h2,h3,h4,h5,h6,p,dl,dt,dd {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+ border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	border: none;
+	vertical-align: top;
+ max-width: 100%;
+ height: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+header,section,article,aside,footer,nav {
+ display: block;
+}
+
+/*-------------------------------------------------reset*/
+
+
+/*common-------------------------------------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	font-size: 14px;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+	line-height: 1.4;
+	background: url(../image/body_back.gif) no-repeat center 0;
+	background-attachment: fixed;
+}
+
+a:link {
+	color: #006699;
+}
+
+a:visited {
+	color: #993300;
+}
+
+a:hover, a:active {
+	color: #F26400;
+}
+
+.clear:after {
+ content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clear {
+ display: inline-table;
+}
+
+/* mac \*/
+* html .clear {
+ height: 1%;
+}
+.clear {
+ display: block;
+}
+/* macend */
+
+.alignleft {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+
+/*header-------------------------------------------------*/
+#title {
+	margin: 0 0 20px;
+	padding: 10px 0;
+	background-color: #FCD4D1;
+	text-align: center;
+}
+
+
+/*cont-------------------------------------------------*/
+#order {
+	width: 960px;
+	margin: 0 auto 30px;
+	text-align: center;
+}
+
+#contents {
+	width: 960px;
+	margin: 0 auto 30px;
+}
+
+#cont {
+	float: left;
+	width: 600px;
+}
+
+#cont table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 4px;
+}
+
+#cont table th {
+	width: 100px;
+	text-align: left;
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 3px solid #46C5E2;
+	background-color: #E6F8FB;
+}
+
+#cont table td {
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#cont table td ul {
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+#cont table td ul li:first-child {
+	margin-bottom: 10px;
+}
+
+#koushi {
+	float: right;
+	width: 300px;
+}
+
+#koushi dt {
+	margin: 0 0 10px;
+	text-align: center;
+}
+
+#atten {
+	width: 960px;
+	margin: 0 auto 60px;
+	font-size: 12px;
+}
+
+.formBox {
+	width: 960px;
+	margin: 0 auto 60px;
+}
+
+.formBox h2 {
+	margin: 0 0 20px;
+	padding: 8px 10px 8px 48px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #F0638A;
+	border-bottom: 2px dotted #F0638A;
+	background: url(semi1610/icon-01.png) #FFEEEE no-repeat 8px 6px;
+}
+
+.formBox p {
+	margin: 0 0 10px;
+}
+
+.formBox table {
+	width: 100%;
+	margin: 0 0 30px;
+}
+
+.formBox table th {
+	width: 140px;
+	padding: 15px;
+	border: 1px solid #CCCCCC;
+	background-color: #FFEEEE;
+	text-align: left;
+}
+
+.formBox table td {
+	padding: 15px;
+	border: 1px solid #CCCCCC;
+}
+
+.formBox table td input[type="text"] {
+	width: 300px;
+}
+
+.formBox .btn {
+	text-align: center;
+}
+
+.formBox .btn input {
+	margin: 0 10px;
+	padding: 10px;
+}
+
+#footer {
+	padding: 10px;
+	background-color: #FCD4D1;
+	text-align: center;
+}
+
+.error {
+	margin: 3px 0 0;
+	background-color: #FEE;
+	padding: 5px;
+	color: #FF0000;
+}
+
+.hs {
+	font-weight: bold;
+	color: #FF0000;
+}
+
+
+
+@media (max-width: 767px) {
+
+#order {
+	width: 100%;
+	margin: 0 0 30px;
+	text-align: center;
+}
+
+#title {
+	width: 100%;
+	margin: 0 0 30px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#contents {
+	width: inherit;
+	margin: 0 10px 30px;
+}
+
+#cont {
+	float: none;
+	width: 100%;
+}
+
+#cont table {
+	width: 100%;
+	margin: 0 0 30px;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+
+#cont table th {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 5px;
+	border-bottom: none;
+	border-left: 3px solid #46C5E2;
+	background-color: #E6F8FB;
+}
+
+#cont table td {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#koushi {
+	float: none;
+	width: 100%;
+}
+
+#atten {
+	width: auto;
+	margin: 0 10px 60px;
+	font-size: 12px;
+}
+
+#atten p {
+	margin: 0 0 10px;
+}
+
+.formBox {
+	width: auto;
+	margin: 0 10px 60px;
+}
+
+.formBox table {
+	width: 100%;
+	margin: 0 0 30px;
+	border-top: 1px solid #CCCCCC;
+}
+
+.formBox table th {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: none;
+	background-color: #FFEEEE;
+	text-align: left;
+}
+
+.formBox table td {
+	display: block;
+	padding: 15px;
+	border: none;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.formBox table td input[type="text"] {
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+
+}
