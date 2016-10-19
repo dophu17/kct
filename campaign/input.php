@@ -71,13 +71,21 @@ class Input
 		if ( empty($data['phone']) ) {
 			$message['phone'] = '電話番号を入力してください。';
 		} else {
-			$message['phone'] = null;
+			if ( !is_numeric($data['phone']) ) {
+				$message['phone'] = '電話番号を入力してください。';
+			} else {
+				$message['phone'] = null;
+			}
 		}
 
 		if ( empty($data['mail']) ) {
 			$message['mail'] = 'メールアドレスを入力してください。';
 		} else {
-			$message['mail'] = null;
+			if ( !strpos('@', $data['mail']) ) {
+				$message['mail'] = 'メールアドレスを入力してください。';
+			} else {
+				$message['mail'] = null;
+			}
 		}
 
 		return $message;

@@ -59,9 +59,6 @@ if ( isset($_POST['send']) ) {
 
 	$headers = "MIME-Version: 1.0 \n";
 	$headers .= "From: " . FROM_EMAIL . "\n";
-	// $headers .= "Bcc: " . $bcc . "\n";
-
-	// $parameters = "-f " . $return;
 
 	ini_set("SMTP","smtp.gmail.com");
 	ini_set("smtp_port", 587);
