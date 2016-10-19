@@ -62,8 +62,8 @@ if ( isset($_POST['send']) ) {
 
 	ini_set("SMTP","smtp.gmail.com");
 	ini_set("smtp_port", 587);
-	// ini_set("username","dophu17@gmail.com");
-	// ini_set("password","exaxpydwwbjmdgbp");
+	ini_set("username","dophu17@gmail.com");
+	ini_set("password","kcrtftpisnatcjyt ");
 	ini_set("sendmail_from","dophu17@gmail.com");
 
 
