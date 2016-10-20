@@ -51,26 +51,30 @@ if ( isset($_POST['send']) ) {
 	mb_language("ja");
 	mb_internal_encoding("UTF-8");
 
-	$subject = MANAGE_CAMPAIGN_SUBJECT;
-	$subject = mb_convert_encoding($subject, "ISO-2022-JP", "AUTO");
-	$subject = mb_encode_mimeheader($subject);
+	// $subject = MANAGE_CAMPAIGN_SUBJECT;
+	// $subject = mb_convert_encoding($subject, "ISO-2022-JP", "AUTO");
+	// $subject = mb_encode_mimeheader($subject);
 
 	$body = $smarty->fetch('mail_manage.tpl');
 
-	$headers = "MIME-Version: 1.0 \n";
-	$headers .= "From: " . FROM_EMAIL . "\n";
+	$from_name = mb_encode_mimeheader(mb_convert_encoding(FROM_NAME,'iso-2022-jp','utf-8'));
+	$headers = "From:" . $from_name . '<' . FROM_EMAIL . '>';
 
 	ini_set("SMTP","smtp.gmail.com");
 	ini_set("smtp_port", 587);
-	ini_set("username","dophu17@gmail.com");
-	ini_set("password","kcrtftpisnatcjyt ");
+	// ini_set("username","dophu17@gmail.com");
+	// ini_set("password","kcrtftpisnatcjyt ");
 	ini_set("sendmail_from","dophu17@gmail.com");
 
-
-	if ( !mb_send_mail(MANAGE_CAMPAIGN_EMAIL, $subject, $body, $headers) ) {
-	    echo "mb_send_mail() failed.\n";
-	    return false;
+	if ( !mb_send_mail($_POST['mail'], TITLE_CONTACT_GUEST, $body, $headers) ) {
+		echo "mb_send_mail() failed.\n";
+		return $smarty->display('confirm.tpl');
 	}
+
+	// if ( !mb_send_mail(MANAGE_CAMPAIGN_EMAIL, $subject, $body, $headers) ) {
+	//     echo "mb_send_mail() failed.\n";
+	//     return false;
+	// }
 
 	return $smarty->display('send.tpl');
 }
