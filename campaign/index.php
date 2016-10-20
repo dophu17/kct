@@ -25,10 +25,6 @@ $smarty->assign('formAction', DOMAIN . '/campaign/index.php');
 $smarty->assign('value', $_POST);
 $message = array();
 
-echo '<pre>';
-print_r($_POST);
-echo '</pre>';
-
 if ( isset($_POST['save']) ) {
 	$message = $input->checkInput($_POST);
 	$status = true;
@@ -87,8 +83,8 @@ if ( isset($_POST['send']) ) {
 	$mailer->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 	$mailer->Port = 587;                                    // TCP port to connect to
 
-	$mailer->setFrom(FROM_EMAIL, FROM_NAME);
-	$mailer->addAddress($_POST['mail'], $_POST['name']);
+	$mailer->setFrom(FROM_EMAIL, mb_encode_mimeheader(mb_convert_encoding(FROM_NAME, 'iso-2022-jp', 'utf-8')));
+	$mailer->addAddress($_POST['mail'], mb_encode_mimeheader(mb_convert_encoding($_POST['name'], 'iso-2022-jp', 'utf-8')));
 	$mailer->isHTML(false);                                  // Set email format to HTML
 
 	$mailer->Subject = TITLE_CONTACT_GUEST;
